@@ -298,8 +298,11 @@
 .documentationAnimation {
     animation: slideFromRight 2.5s ease forwards 0.5s;
 }
+.documentationAnimation2 {
+    animation: slideFromRight 1.5s ease forwards;
+}
 
-.startTradingAnimation, .documentationAnimation {
+.startTradingAnimation, .documentationAnimation, .documentationAnimation2 {
     opacity: 0;
 }
 
@@ -371,7 +374,7 @@ video {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); 
+    background-color: rgba(0, 0, 0, 0.3); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -496,6 +499,8 @@ html {
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 		transition-timing-function: linear;
 	}
+
+	
 
 	.modal-backdrop.fade {
 		opacity: 0;

@@ -36,12 +36,12 @@ const Hero = () => {
       </div>
       <div className={`flex-1 flex flex-col ${styles.flexCenter} md:my-0 my-10 relative justify-between`}>
         <div className="video-container">
-          <video ref={videoRef} src={videoAsset} className="w-full h-full"></video>
-          <div ref={overlayRef} className="video-overlay" onClick={playVideo}>
-            <div className="play-button"></div>
+          <video ref={videoRef} src={videoAsset} className="w-full h-full documentationAnimation2"></video>
+          <div ref={overlayRef} className="video-overlay documentationAnimation2" onClick={playVideo}>
+            <div className="play-button documentationAnimation2"></div>
           </div>
         </div>
-        <div className="ss:flex hidden space-x-5 md:mr-5 mr-0 mt-20">
+        <div className="ss:flex hidden space-x-5 md:mr-5 mr-0 mt-10">
           <div className="transform scale-95 startTradingAnimation">
             <StartTrading />
           </div>
