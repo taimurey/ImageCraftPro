@@ -89,33 +89,23 @@
     #bd33cf 90.29%
   );
 }
-.gradient-text {
+.bg-red-gradient {
 	background: linear-gradient(
 	  157.81deg,
 	  #FFA500 -43.27%,  /* Orange */
 	  #FF4500 -21.24%,  /* OrangeRed */
-	  #DC143C 12.19%,   /* Crimson */
+	  #14dcbb 12.19%,   /* Crimson */
 	  #FFD700 29.82%,   /* Gold */
-	  #FF6347 51.94%,   /* Tomato */
-	  #FF0000 90.29%    /* Red */
+	  #18b4fc 90.29%    /* Red */
 	);
 	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 	background-clip: text;
-	color: transparent;
+	text-fill-color: transparent;
   }
   
   
-.bg-red-gradient {
-  background: linear-gradient(
-    157.81deg,
-    #def9fa -43.27%,
-    #f5bebe -21.24%,
-    #f09d9d 12.19%,
-    #eb7d7d 29.82%,
-    #e65c5c 51.94%,
-    #cf3333 90.29%
-  );
-}
+
 
 .bg-black-gradient {
   background: linear-gradient(

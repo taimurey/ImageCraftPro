@@ -1,5 +1,10 @@
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-
+import benefit_dao_1 from "/src/assets/dao/benefit_dao_1.jpg";
+import benefit_dao_2 from "/src/assets/dao/benefit_dao_2.png";
+import benefit_dao_3 from "/src/assets/dao/benefit_dao_3.png";
+import benefit_dao_4 from "/src/assets/dao/benefit_dao_4.png";
+import benefit_dao_5 from "/src/assets/dao/benefit_dao_5.png";
+import circle_element from "/src/assets/dao/3d_elements_circle.png";
 const BeniftContent = () => {
   return (
     <Tabs>
@@ -83,6 +88,38 @@ const BeniftContent = () => {
 
 
 
+          <Tab className="nav-item">
+  <button
+    className="nav-link nav-link--style-2 group relative flex w-full border-b border-jacarta-100 p-6 text-left dark:border-jacarta-600"
+    type="button"
+  >
+    {/* Start of new SVG */}
+    <svg width="24" height="24" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" className="mr-2 h-8 w-8 flex-shrink-0 fill-accent">
+    <defs>
+        <linearGradient id="gradient-4" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style={{ stopColor: "#00c6e2", stopOpacity: 1 }} />
+          <stop offset="100%" style={{ stopColor: "#2e3154", stopOpacity: 1 }} />
+        </linearGradient>
+      </defs>
+      <path fill="url(#gradient-4)" d="M453.004 35.117c-65.314 46.61-189.755 41.018-213.559 125.426C184.41 101.41 98.625 83.031 21.771 63.209c6.532 139.103 71.38 147.437 192.44 194.547 23.71 25.786 29.786 49.93 19.254 82.705 46.403 5.1 71.504 15.468 106.754 27.742-.708-71.67-25.14-108.928-75.518-175.035 11.058 4.233 44.979 37.02 56.578 58.607 109.419-42.421 147.64-112.074 131.725-216.658zM180.178 353.9c-60.89-.24-114.034 19.49-158.426 74.221 167.075-48.84 292.003-13.21 471.893 7.895-118.936-38.752-224.474-81.763-313.467-82.116zm98.043 77.844c-99.28.255-206.34 18.738-256.866 63.139 168.002-26.61 356.801-28.408 470.8-4.967 1.102-35.337-101.418-58.46-213.934-58.172z"/>
+    </svg>
+    {/* End of new SVG */}
+
+    <div>
+      
+        <span className="mb-2 mt-1 block font-display text-xl font-bold text-jacarta-700 group-hover:text-accent dark:text-white transition transition-colors ">
+        Whale Tracer Mode
+      </span>
+      <div className="nav-link-content hidden">
+        <p className="text-jacarta-500 dark:text-jacarta-300">
+          Keep an eye on the big players. Trace the wallet balances of token holders, especially those who've recently acquired the token. Stay informed and strategize accordingly.
+        </p>
+      </div>
+    </div>
+  </button>
+</Tab>
+
+{/* End tab */}
             <Tab className="nav-item">
               <button
                 className="nav-link nav-link--style-2 group relative flex w-full border-b border-jacarta-100 p-6 text-left dark:border-jacarta-600"
@@ -118,38 +155,6 @@ const BeniftContent = () => {
             </Tab>
             {/* End tab */}
 
-            <Tab className="nav-item">
-  <button
-    className="nav-link nav-link--style-2 group relative flex w-full border-b border-jacarta-100 p-6 text-left dark:border-jacarta-600"
-    type="button"
-  >
-    {/* Start of new SVG */}
-    <svg width="24" height="24" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" className="mr-2 h-8 w-8 flex-shrink-0 fill-accent">
-    <defs>
-        <linearGradient id="gradient-4" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style={{ stopColor: "#00c6e2", stopOpacity: 1 }} />
-          <stop offset="100%" style={{ stopColor: "#2e3154", stopOpacity: 1 }} />
-        </linearGradient>
-      </defs>
-      <path fill="url(#gradient-4)" d="M453.004 35.117c-65.314 46.61-189.755 41.018-213.559 125.426C184.41 101.41 98.625 83.031 21.771 63.209c6.532 139.103 71.38 147.437 192.44 194.547 23.71 25.786 29.786 49.93 19.254 82.705 46.403 5.1 71.504 15.468 106.754 27.742-.708-71.67-25.14-108.928-75.518-175.035 11.058 4.233 44.979 37.02 56.578 58.607 109.419-42.421 147.64-112.074 131.725-216.658zM180.178 353.9c-60.89-.24-114.034 19.49-158.426 74.221 167.075-48.84 292.003-13.21 471.893 7.895-118.936-38.752-224.474-81.763-313.467-82.116zm98.043 77.844c-99.28.255-206.34 18.738-256.866 63.139 168.002-26.61 356.801-28.408 470.8-4.967 1.102-35.337-101.418-58.46-213.934-58.172z"/>
-    </svg>
-    {/* End of new SVG */}
-
-    <div>
-      
-        <span className="mb-2 mt-1 block font-display text-xl font-bold text-jacarta-700 group-hover:text-accent dark:text-white transition transition-colors ">
-        Whale Tracer Mode
-      </span>
-      <div className="nav-link-content hidden">
-        <p className="text-jacarta-500 dark:text-jacarta-300">
-          Keep an eye on the big players. Trace the wallet balances of token holders, especially those who've recently acquired the token. Stay informed and strategize accordingly.
-        </p>
-      </div>
-    </div>
-  </button>
-</Tab>
-
-{/* End tab */}
 
       <Tab className="nav-item">
         <button
@@ -198,12 +203,12 @@ const BeniftContent = () => {
               <div className=" relative">
                 <figure className="flex items-center justify-center">
                   <img
-                    src="/src/assets/dao/benefit_dao_1.jpg"
+                    src={benefit_dao_1}
                     alt="benifit"
                     className="rounded-full border border-jacarta-100 p-14 dark:border-jacarta-600"
                   />
                   <img
-                    src="/src/assets/dao/3d_elements_circle.png"
+                    src={circle_element}
                     alt=""
                     className="absolute animate-spin-slow"
                   />
@@ -212,18 +217,34 @@ const BeniftContent = () => {
             </TabPanel>
 
             <TabPanel>
+    <div className="relative">
+        <figure className="flex items-center justify-center">
+            <img
+                src={benefit_dao_2}
+                alt="benifit"
+                className="rounded-20 border border-jacarta-100 p-14 dark:border-jacarta-600"
+            />
+            <img
+           src={circle_element}
+                alt="benifit"
+                className="absolute animate-spin-slow"
+            />
+        </figure>
+    </div>
+</TabPanel>
+<TabPanel>
               <div className="relative">
-                <figure className="flex items-center justify-center">
+                <figure className="flex items-center justify-center ">
                   <img
-                    src="/src/assets/dao/benefit_dao_2.jpg"
+                    src={benefit_dao_4}
                     alt="benifit"
-                    className="rounded-full border border-jacarta-100 p-14 dark:border-jacarta-600"
+                    className="rounded-20 border border-jacarta-100 p-5 dark:border-jacarta-600"
                   />
-                  <img
-                    src="/src/assets/dao/3d_elements_circle.png"
+                  {/* <img
+                  src={circle_element}
                     alt="benifit"
                     className="absolute animate-spin-slow"
-                  />
+                  /> */}
                 </figure>
               </div>
             </TabPanel>
@@ -231,44 +252,29 @@ const BeniftContent = () => {
               <div className="relative">
                 <figure className="flex items-center justify-center">
                   <img
-                    src="/src/assets/dao/benefit_dao_3.jpg"
+                    src={benefit_dao_3}
                     alt="benifit"
                     className="rounded-full border border-jacarta-100 p-14 dark:border-jacarta-600"
                   />
                   <img
-                    src="/src/assets/dao/3d_elements_circle.png"
+                    src={circle_element}
                     alt="benifit"
                     className="absolute animate-spin-slow"
                   />
                 </figure>
               </div>
             </TabPanel>
-            <TabPanel>
-              <div className="relative">
-                <figure className="flex items-center justify-center">
-                  <img
-                    src="/src/assets/dao/benefit_dao_4.jpg"
-                    alt="benifit"
-                    className="rounded-full border border-jacarta-100 p-14 dark:border-jacarta-600"
-                  />
-                  <img
-                    src="/src/assets/dao/3d_elements_circle.png"
-                    alt="benifit"
-                    className="absolute animate-spin-slow"
-                  />
-                </figure>
-              </div>
-            </TabPanel>
+        
             <TabPanel>
               <div className=" relative">
                 <figure className="flex items-center justify-center">
                   <img
-                    src="/src/assets/dao/benefit_dao_5.jpg"
+                    src={benefit_dao_5}
                     alt="benifit"
                     className="rounded-full border border-jacarta-100 p-14 dark:border-jacarta-600"
                   />
                   <img
-                    src="/src/assets/dao/3d_elements_circle.png"
+                    src={circle_element}
                     alt="benifit"
                     className="absolute animate-spin-slow"
                   />

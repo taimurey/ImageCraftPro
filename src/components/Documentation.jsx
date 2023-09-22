@@ -10,7 +10,7 @@ const Documentation = ({ styles }) => {
   };
 
   return (
-    <a href="https://your-link-placeholder.com" target="_blank" rel="noopener noreferrer">
+    <a href="https://docs.mevarik.com" target="_blank" rel="noopener noreferrer">
       <button 
           type="button" 
           style={buttonStyles}

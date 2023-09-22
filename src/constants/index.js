@@ -13,7 +13,7 @@ export const navLinks = [
   },
   {
     id: "product",
-    title: "Product",
+    title: "Transactions",
     isHovered: false,
   },
   {

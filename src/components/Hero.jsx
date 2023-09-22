@@ -24,7 +24,7 @@ const Hero = () => {
         <div className="flex flex-row justify-between items-center w-full">
           <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[60px] text-white ss:leading-[100.8px] leading-[75px] slide-in-from-left">
             Blazing Fast <br className="sm:block hidden" />
-            <span className="bg-blue-gradient"> Discord</span>
+            <span className="bg-red-gradient "> Discord</span>
           </h1>
         </div>
         <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full slide-in-from-left delay-500">
@@ -36,7 +36,7 @@ const Hero = () => {
       </div>
       <div className={`flex-1 flex flex-col ${styles.flexCenter} md:my-0 my-10 relative justify-between`}>
         <div className="video-container">
-          <video ref={videoRef} src={videoAsset} className="w-full h-full documentationAnimation2"></video>
+          <video ref={videoRef} src={videoAsset} className="w-full   h-full documentationAnimation2"></video>
           <div ref={overlayRef} className="video-overlay documentationAnimation2" onClick={playVideo}>
             <div className="play-button documentationAnimation2"></div>
           </div>
@@ -50,9 +50,10 @@ const Hero = () => {
           </div>
         </div>
         {/* gradient start */}
-        <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
+        <div className="absolute z-[0] w-[40%] h-[75%] top-0  blue__gradient" />
         <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
-        <div className="absolute z-[0] w-[50%] h-[100%] right-20 bottom-20 pink__gradient" />
+        <div className="absolute z-[0] w-[50%] h-[100%] right-20 bottom-20 blue__gradient" />
+        <div className="absolute z-[0] w-[50%] h-[100%] left-20 bottom-40 blue__gradient" />
         {/* gradient end */}
       </div>
       <div className={`ss:hidden ${styles.flexCenter}`}>

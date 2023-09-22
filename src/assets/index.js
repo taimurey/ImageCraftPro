@@ -1,6 +1,6 @@
 import airbnb from "./airbnb.png";
 import bill from "./bill.png";
-import videoAsset from "./Preview.mp4"
+import videoAsset from "./Preview2.mp4"
 import binance from "./binance.png";
 import card from "./card.png";
 import coinbase from "./coinbase.png";
