@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import Navbar from '../components/Navbar';
 import upscale from '../assets/dashboard/scale-up.png';
 import badge from '../assets/dashboard/badge.png';
 import imageIcon from '../assets/dashboard/image-.png';
 import magicWand from '../assets/dashboard/magic-wand.png';
 import styles from "../style";
+import Navbar from '../components/Navbar';
 
 
 const Index = () => {

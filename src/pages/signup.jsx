@@ -11,6 +11,8 @@ import { useNavigate } from "react-router-dom";
 import { initializeApp } from "firebase/app";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import styles from "../style";
+import { Navbar } from "../components";
 
 const Signup = () => {
   const app = initializeApp(firebaseConfig);
@@ -40,6 +42,11 @@ const Signup = () => {
   };
   return (
     <div className="bg-[#c9e8e4] w-full relative min-h-[100vh]">
+       <div className='bg-primary'>
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <Navbar />
+      </div>
+      </div>
       <div className="w-full absolute">
         <img src="./Assests/front.png" alt="" className="h-[100vh]  mx-auto" />
         <div className="bg-black/50 h-[100vh]  mx-auto w-full absolute top-0"></div>
@@ -74,7 +81,10 @@ const Signup = () => {
             Sign Up
           </button>
           <Link to="/login">
-            <p className="text- underline text-white">move to login</p>
+          <button
+            className="flex z-20 min-w-[200px] justify-center shadow-md font-bold items-center bg-black text-red-300 px-8 py-2 rounded-md "
+            type="submit">Already Registered? Login
+          </button>
           </Link>
         </form>
       </div>
