@@ -1,60 +1,22 @@
-import { useEffect } from "react";
-import styles from "./style";
-import {
-  Billing,
-  Business,
-  CardDeal, // seems unused, consider removing if not needed
-  Clients,
-  CTA,
-  Footer,
-  Navbar,
-  Stats,
-  Testimonials, // seems unused, consider removing if not needed
-  Hero
-} from "./components";
-import Benifits from "./components/Benefits/Benifits";
-import Intro from "./components/Benefits/Intro";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-const App = () => {
-  
-  useEffect(() => {
-    console.log("Component did mount!");
+import Login from "./pages/login";
+import Signup from "./pages/signup";
+import Page from "./main_page";
+import Home from "./pages/index";
 
-    return () => {
-      console.log("Component will unmount!");
-    };
-  }, []);
-
+function App() {
   return (
-    <div className="bg-primary w-full overflow-hidden">
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Navbar />
-        </div>
-      </div>
-
-      <div className={`bg- ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Hero />
-        </div>
-      </div>
-
-    
-
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
-        {/* <Intro /> */}
-          <Stats />
-          <Benifits />
-          <Business />
-          <Billing />
-          <Clients />
-          <CTA />
-          <Footer />
-        </div>
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Page />} />         
+        <Route path="/dashboard" element={<Home />} />
+        <Route path="/login" element={<Login />} />   
+        <Route path="/signup" element={<Signup />} /> 
+      </Routes>
+    </Router>
   );
-};
+}
 
 export default App;

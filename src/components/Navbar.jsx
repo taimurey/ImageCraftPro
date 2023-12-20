@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { close, logo, menu } from "../assets";
 import { navLinks as initialNavLinks } from "../constants";  // Import it as initialNavLinks to differentiate from local state
-import Button from "./discordbutton";
+import Button from "./DashboardButton";
+import LoginButton from "./LoginButton";
 import Telegram from "./telegram";
 
 const Navbar = () => {
@@ -57,7 +58,8 @@ const Navbar = () => {
         ))}
         
         <Button className="absolute " styles={"ml-20"} />
-        <Telegram className="absolute " styles={"ml-2"} />
+        <LoginButton className="absolute " styles={"ml-5"} />
+
       </ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center">

@@ -7,13 +7,13 @@ export const navLinks = [
     isHovered: false,
   },
   {
-    id: "features",
-    title: "Features",
+    id: "Upscalar",
+    title: "Upscalar",
     isHovered: false,
   },
   {
     id: "product",
-    title: "Transactions",
+    title: "BG Remover",
     isHovered: false,
   },
   {
@@ -27,23 +27,23 @@ export const features = [
   {
     id: "feature-1",
     icon: rocket,
-    title: "Simulation",
+    title: "Upload",
     content:
-      "Simulate transactions and send them in bundles for more efficient processing.",
+      "Upload images in bundles for more efficient processing.",
   },
   {
     id: "feature-2",
     icon: ninja,
-    title: "Private Transactions",
+    title: "Private Editing",
     content:
-      "Protect your transactions and avoid MEV sandwich attacks using enhanced security and optimal execution.",
+      "Protect yourself with our advanced HTTPS and privacy tools",
   },
   {
     id: "feature-3",
     icon: transfer,
-    title: "Balance Transfer",
+    title: "Response",
     content:
-      "Purchase at a low price, sell at a peak. Implement your strategy meticulously.",
+      "Enjoy fast image background removals and image upscalings",
   },
 ];
 
@@ -82,13 +82,13 @@ export const stats = [
   },
   {
     id: "stats-2",
-    title: "History",
-    value: "Trading",
+    title: "Images",
+    value: "High Definition",
   },
   {
     id: "stats-3",
-    title: "Trade Success Rate",
-    value: "99.8% ",
+    title: "Enchancements",
+    value: "AR",
   },
 ];
 

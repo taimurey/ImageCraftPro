@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { features } from "../constants";
 import styles, { layout } from "../style";
-import Button from "./StartTrading";
+import Button from "./EditImages";
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card`}>
@@ -46,10 +46,9 @@ const Business = () => {
     <section id="features" className={layout.section}>
       <div className={`${layout.sectionInfo} ${isVisible ? "slide-in-from-right visible" : "slide-in-from-right"}`}>
         <h2 className={styles.heading2}>
-          Lightning Trades,  <br className="sm:block hidden" /> Seamless Wins.
+          Lightning Uploads,  <br className="sm:block hidden" /> Upscaling in Seconds
         </h2>
         <p className={`${styles.paragraph} max-w-[520px] mt-5`}>
-          Empower Your Token Ecosystem – Vesting, Payroll, Airdrops, Grants, & Beyond!
         </p>
 
         <Button styles={`mt-10`} />

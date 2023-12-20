@@ -1,6 +1,6 @@
 import airbnb from "./airbnb.png";
 import bill from "./bill.png";
-import videoAsset from "./Preview2.mp4"
+import imageuploadbutton from "./uploadbutton.png"
 import binance from "./binance.png";
 import card from "./card.png";
 import coinbase from "./coinbase.png";
@@ -34,7 +34,7 @@ import uniswap from "./uniswap.svg";
 import bigdiscord from "./discord-logo-full.svg";
 import hourglass from "./hourglass.png";
 export {
-  videoAsset,
+  imageuploadbutton,
   goggles,
   bigdiscord,
   transfer,
