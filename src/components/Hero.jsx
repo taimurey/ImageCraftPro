@@ -40,7 +40,10 @@ const Hero = () => {
           <img 
             src={imageuploadbutton} 
             alt="Upload Button" 
-            style={{ opacity: 1 }}
+            style={{ opacity: 1,
+              borderRadius: '25px',
+              width: '75%',
+            }}
           />
         </div>
 

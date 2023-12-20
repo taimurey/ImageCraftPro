@@ -6334,6 +6334,11 @@ html {
 	@apply bg-green/10 text-green;
 }
 
+.bg-custom {
+    /* background-color: #023047; */
+    background-color: #33dfc8;
+  }
+
 /* Gradient animation */
 .animate-gradient {
 	-webkit-text-fill-color: transparent;
