@@ -1,18 +1,26 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";  // Import useNavigate
 import { close, logo, menu } from "../assets";
-import { navLinks as initialNavLinks } from "../constants";  // Import it as initialNavLinks to differentiate from local state
+import { navLinks as initialNavLinks } from "../constants";
 import Button from "./DashboardButton";
 import LoginButton from "./LoginButton";
-import Telegram from "./telegram";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
-  const [navLinks, setNavLinks] = useState(initialNavLinks); // Create local state for navLinks
+  const [navLinks, setNavLinks] = useState(initialNavLinks);
 
+  // Create navigate function using the useNavigate hook
+  const navigate = useNavigate();
+
+  // Function to handle logo click
+  const handleLogoClick = () => {
+    navigate('/');  // Navigate to the root path
+  };
+  
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar fadeSlideInFromTop">
-      <img src={logo} alt="Vaultum" className="w-[20%] h-[20%]" />
+       <img src={logo} alt="ImageCraftPro" className="w-[20%] h-[20%] cursor-pointer" onClick={handleLogoClick} />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
