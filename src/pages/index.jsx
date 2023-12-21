@@ -1,3 +1,4 @@
+// Index.js
 import React, { useState } from 'react';
 import upscale from '../assets/dashboard/scale-up.png';
 import badge from '../assets/dashboard/badge.png';
@@ -5,6 +6,7 @@ import imageIcon from '../assets/dashboard/image-.png';
 import magicWand from '../assets/dashboard/magic-wand.png';
 import styles from "../style";
 import Navbar from '../components/Navbar';
+import ImageUploader from './upscale';
 
 const Index = () => {
   const [image, setImage] = useState(null);
@@ -29,7 +31,8 @@ const Index = () => {
 
       <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'start', alignItems: 'flex-start', padding: '20px', gap: '20px' }}>
         <div style={{ backgroundColor: 'white', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', justifyContent: 'flex-start', gap: '10px', padding: '10px', borderRadius: '10px', boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)' }}>
-          <Button label="Upscale Image" imageSrc={upscale} />
+          {/* Pass the image to ImageUploader */}
+          <ImageUploader imageFile={image} imageSrc={upscale} />
           <Button label="Enhance AI" imageSrc={badge} />
           <Button label="Image Colorizer" imageSrc={imageIcon} />
           <Button label="Magic Eraser" imageSrc={magicWand} />
