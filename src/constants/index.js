@@ -16,11 +16,11 @@ export const navLinks = [
     title: "BG Remover",
     isHovered: false,
   },
-  {
-    id: "get_started",
-    title: "Links",
-    isHovered: false,
-  },
+  // {
+  //   id: "get_started",
+  //   title: "Links",
+  //   isHovered: false,
+  // },
 ];
 
 export const features = [

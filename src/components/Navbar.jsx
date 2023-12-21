@@ -14,6 +14,20 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   // Function to handle logo click
+  const handleNavClick = (id) => {
+    switch (id) {
+      case 'home':
+        navigate('/');
+        break;
+      case 'Upscalar':
+        navigate('/dashboard');
+        break;
+      // ... handle other cases ...
+      default:
+        // Do nothing or navigate to a default path
+    }
+  };
+
   const handleLogoClick = () => {
     navigate('/');  // Navigate to the root path
   };
@@ -29,7 +43,7 @@ const Navbar = () => {
             className={`font-poppins font-normal cursor-pointer text-[16px] ${
               active === nav.title ? "text-white" : "text-dimWhite"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
-            onClick={() => setActive(nav.title)}
+            onClick={() => handleNavClick(nav.id)}
             style={{
               transition: 'transform 0.3s ease, filter 0.3s ease, color 0.3s ease, fontWeight 0.3s ease',
               transform: nav.isHovered ? 'scale(1.1)' : 'scale(1)',

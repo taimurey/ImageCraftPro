@@ -1,5 +1,5 @@
 import styles from "../style";
-import { discount, robot, imageuploadbutton } from "../assets";
+import {  robot, imageuploadbutton } from "../assets";
 import GetStarted from "./GetStarted";
 import EditImages from "./EditImages";
 import Documentation from "./Documentation";
